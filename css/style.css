@@ -1,0 +1,105 @@
+/* ADD ************************* */
+@import "reset.css"; /* correction de bug de placement */
+/*_ **************************** */
+
+body{
+    padding: 5px;
+    background: #fdd007;
+}
+
+#container{
+    width: 460px; /* EDIT default 400px just size up */
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+form {
+    width:100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#container h1{
+    width: 38%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+input[type=submit] {
+    background-color: #fdd007;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+    /* ADD ************************* */ /* fancier */
+    border: 1px solid #fdd007; /* bug when hover else */
+    font-weight: 700;
+    letter-spacing: .5px;
+    /*_ **************************** */
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #dba307;
+    /* border: 1px solid #fdd007; */
+}
+
+.noaccount{
+    opacity: 0.5;
+    padding-top: 10px;
+}
+
+
+.error{
+    display: absolute;
+    margin-left: 550px;
+    color: red;
+}
+
+ /* ADD ************************* */ /* disconnection message */
+.log-info {
+    position: relative;
+    background-color: #fff;
+    width: 460px;
+    padding: 10px 10px;
+    margin: 5px 0px;
+    border-left: solid red 3px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+    font-family: Consolas;
+    font-style: italic;
+    font-weight: bold;
+
+    animation: slide-fade 1s cubic-bezier(.7, -0.25, 0.7, 1) 0.1s 1 reverse backwards ;
+}
+@keyframes slide-fade {
+    from {
+        transform: translateX(0);
+
+    }
+    to {
+        transform: translateX(-110%);
+    }
+}
+
+.log-info > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+.log-info > embed {
+    height: 2em;
+    fill: green;
+}
+ /*_ **************************** */

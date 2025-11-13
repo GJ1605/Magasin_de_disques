@@ -1,0 +1,77 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@0;1');
+
+
+#commands-container{
+    background-color: whitesmoke;
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+}
+
+li > div > * {
+    display: inline-block;
+}
+
+.commands {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+
+    width: 80%;
+
+    margin: 0px auto;
+    padding: 5px;
+
+    background-color: #ccc;
+}
+li:not(:last-child) .commands {
+    border-bottom: black solid 1px;
+}
+li:nth-child(even) .commands {
+    background-color: #ddd;
+}
+
+
+.commands > p {
+    width: 220px;
+}
+
+.commands .title {
+    width: 300px;
+}
+
+.commands .price {
+    width: 100px;
+    text-align: right;
+}
+
+
+
+
+
+/*
+.commands .title{
+    text-align: left;
+    margin-left: 1em;
+}
+.commands .title span {
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.commands .price {
+    text-align: right;
+    margin-right: 1em;
+}
+*/

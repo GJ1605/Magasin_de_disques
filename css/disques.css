@@ -1,0 +1,151 @@
+body{
+    background-color: #666699;
+}
+
+#titre{
+    text-align: center;
+    border: 3px solid black;
+    margin-left: 35%;
+    margin-right: 35%;
+    background-color: #969696;
+}
+
+
+#source{
+    text-align: center;
+    border: 3px solid red;
+    width: 30%;
+    padding: 5px;
+    background-color: #003300;
+
+    margin: 0 auto 0 0; /* align left */
+}
+
+#destination{
+    text-align: center;
+    border: 3px solid #003300;
+    width: 30%;
+    padding: 5px;
+    background-color: red;
+
+    margin: 0 0 0 auto; /* align right */
+}
+
+#panier{
+    text-align: center;
+    font-weight: bold;
+    font-size: 14pt;
+    color: yellow;
+}
+
+img{
+    width:100px;
+    margin: 5px;
+}
+
+.bouton{
+    margin-right: 20px;
+}
+
+#newsletter-mail {
+    display: inline-block;
+}
+
+
+#address-mailing ~ * #mailing {
+    display: block;
+}
+#address-mailing:checked ~ * #mailing {
+    display: none;
+}
+
+
+#newsletter ~ #newsletter-mail {
+    display: none;
+}
+#newsletter:checked ~ #newsletter-mail {
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.adresse {
+    width: fit-content;
+}
+
+#deplacement {
+    min-height: 325px;
+}
+
+#form {
+    width: 60%;
+    margin: auto;
+}
+
+#presentation {
+    width: 75%;
+    margin-left: auto; 
+    margin-right: auto;
+    height: 50%;
+}
+
+#bonjour {
+    font-size: x-large; 
+}
+
+#suivi {
+    width: 70%;
+}
+
+#addconfirm {
+    display: flex; 
+}
+
+.tdadresse {
+    padding-right: 100px;
+}
+
+#textenewsletter {
+    color: silver; 
+    opacity: 40%;
+}
+
+.error-message {
+    color: red;
+    display: inline;
+}
+
+
+
+#cmd {
+    width: 50%;
+    margin: auto;
+}
+
+#albumscmd {
+    font-size: 22px;
+    text-align: center;
+}
+
+#confirmcmd {
+    margin: auto;
+}
+
+.article {
+    font-size: 17px;
+    text-align: center;
+}
+
+.articleprix {
+    font-size: 17px;
+    width: 100px;
+    text-align: center;
+}
+
+.categorie {
+    font-size: 20px;
+}
